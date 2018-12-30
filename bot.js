@@ -207,9 +207,7 @@ client.on("message", message => {
     
              _ _---------------- _ _
   BOT By: | <@374911904885506048> |-| <@311163751522893826> |-| <@407695930750402561> |
-
    **
-
    `)
    message.author.sendEmbed(embed)
    
@@ -1278,11 +1276,9 @@ client.on('ready', () => {
 /*
 //daily
 const moment = ('moment');
-
     const money = require('discord-money');
  
     // Define client for Discord
-
  
     // This runs when a message is recieved...
     client.on('message', message => {
@@ -1301,7 +1297,6 @@ const moment = ('moment');
  
         // Example: Adding Money To A User
         if (message.content.toUpperCase() === `${prefix}PAYYOU`) {
-
  //           money.updateBal(message.author.id, 1000000 /* Value *///) //.then((i) => { // money.updateBal grabs the (userID, value) value being how much you want to add, and puts it into 'i'.
           /*       message.channel.send(`**You got $1000000!**\n**New Balance:** ${i.money}`);
             })
@@ -1319,7 +1314,6 @@ const moment = ('moment');
  
         // Example: Getting a daily reward
         if (message.content.toUpperCase() === prefix + `DAILY`) {
-
                 if (money[message.author.username + message.guild.name] != moment().format('L')) {
                     money[message.author.username + message.guild.name] = moment().format('L')
                     money.updateBal(message.author.id, 500 ,200).then((i) => { // The daily ends of the day, so everyday they can get a daily bonus, if they missed it, they can't get it back again.
@@ -1759,7 +1753,6 @@ ${prefix}role all اسم الرتبة
 ${prefix}role bots اسم الرتبة
 لأعطاء الرتبة للبشريين
 ${prefix}role humans اسم الرتبة
-
    `)
 .setAuthor(message.author.username, message.author.avatarURL) 
    message.author.sendEmbed(embed)
@@ -1983,10 +1976,7 @@ const dateFormat = require('dateformat');
 var Canvas = require('canvas')
 var jimp = require('jimp')
 var moment = require("moment");
-
-
 client.on('message', message => {
-
     if(message.content.startsWith(prefix + '2id')) {
 if(!message.channel.guild) return;
       var args = message.content.split(" ").slice(1);
@@ -2022,7 +2012,6 @@ if(!message.channel.guild) return;
             let ground = new Image;
             ground.src = Background;
             ctx.drawImage(ground, 0, 0, 500, 500);
-
 })
                 let url = h.user.displayAvatarURL.endsWith(".webp") ? h.user.displayAvatarURL.slice(5, -20) + ".png" : h.user.displayAvatarURL;
                 jimp.read(url, (err, ava) => {
@@ -2053,7 +2042,6 @@ if(!message.channel.guild) return;
             var millis1 = new Date().getTime() - moment(message.member.joinedAt);;
             
         }
-
   const days1 = millis1 / 1000 / 60 / 60 / 24;
   
                         //دخولك السيرفر
@@ -2063,7 +2051,6 @@ if(!message.channel.guild) return;
                         ctx.fillStyle = "#ffffff";
                         ctx.textAlign = "center";
                         ctx.fillText(day2, 388, 97); 
-
                         //ur name
                         ctx.font = '27px BlowBrush';
                         ctx.fontSize = '30px';
@@ -2107,7 +2094,6 @@ if(!message.channel.guild) return;
      message.channel.sendFile(canvas.toBuffer())
 })
    })
-
 } });*/
 
 /*google cherche*/
@@ -2200,7 +2186,7 @@ if (message.content.startsWith(prefix + 'نقاطي')) {
   fs.writeFile("./json/awsmm.json", JSON.stringify(points), (err) => {
     if (err) console.error(err)
   })
-});*/
+}) 
 
 /*nickname*/
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -2248,4 +2234,4 @@ if (message.content.startsWith(prefix + 'نقاطي')) {
 /////////////////////////////////////////////////////////////////////////ALPHA / ALPHA CODES / ALPHA CODES///////////////////////////
 
 
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN); 
