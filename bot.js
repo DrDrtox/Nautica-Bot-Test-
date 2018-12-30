@@ -1,26 +1,10 @@
-const Discord = require('discord');
+const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-        console.log('╔[════════════]╗')
-        console.log(' Bot Is Online')
-        console.log('╚[════════════]╝')
-        console.log('')
-        console.log('╔[════════════════════════════════════]╗');
-        console.log('')
-        console.log(' Logged in as * [ " ${client.user.username} " ] ');
-        console.log( ' Welcome Bro , UserName * [ " ${client.user.username} " ]' );
-        console.log(   [ " ${client.user.tag} " ]);
-        console.log('')
-        console.log('╚[════════════════════════════════════]╝')
-        console.log('')
-        console.log('╔[════════════]╗')
-        console.log('')
-        console.log( 'Have Fun - Mal Team  ')
-        console.log('')
-        console.log('╚[════════════]╝')
-        
-}); 
+    console.log('I am ready!');
+});
+
 
 
 client.on('message', message => {
