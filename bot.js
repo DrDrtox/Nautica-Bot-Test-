@@ -52,4 +52,4 @@ client.on('guildMemberAdd', member => {
     });
 
 
-bot.login(process.env.BOT_TOKEN);// لا تغير فيها شيء
+client.login(process.env.BOT_TOKEN); /// لا تغير فيها شيء
